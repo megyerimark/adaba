@@ -1,7 +1,8 @@
 public class Data {
     Database database;
 
-    public Data() {
+    public Data(Database database) {
+        this.database=database;
     }
     
 }
