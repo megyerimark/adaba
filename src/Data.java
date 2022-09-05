@@ -3,6 +3,10 @@ public class Data {
 
     public Data(Database database) {
         this.database=database;
+
+    }
+    public void connect(){
+        this.database.connectDb();
     }
     
 }
