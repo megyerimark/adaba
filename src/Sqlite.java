@@ -32,29 +32,14 @@ public class Sqlite implements Database{
     public void tryClosedb(Connection con) throws SQLException{
         con.close();
 
+       
+    }
+    public void closeDb(Connection con) {
         try {
             tryClosedb(con);
         } catch (SQLException e) {
            System.err.println("Hiba! Az SQLite adatbázis bezárása sikertelen!");
         }
     }
-
-
-
-
-
-
-
-    @Override
-    public void closeDb(Connection con) {
-       return null;
-        
-    }
-
-
-
-
-
-
  
 }
