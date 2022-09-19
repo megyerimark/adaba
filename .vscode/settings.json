@@ -3,6 +3,8 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\diak\\Downloads\\mariadb-java-client-3.0.7.jar"
+        "c:\\Users\\diak\\desktop\\Megyeri\\ebbe\\adaba\\mariadb-java-client-3.0.7.jar",
+        "sqlite-jdbc-3.39.3.0.jar",
+        "mariadb-java-client-3.0.7.jar"
     ]
 }

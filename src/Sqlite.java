@@ -8,14 +8,7 @@ public class Sqlite implements Database{
         
         return DriverManager.getConnection(url);
         }
-
-
-        
-
-
-
-
-    @Override
+        @Override
     public Connection connectDb() throws SQLException {
         Connection con= null;
 
