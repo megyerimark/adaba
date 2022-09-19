@@ -22,12 +22,21 @@ public class Sqlite implements Database{
         try {
             con =tryConnectDb();
         } catch (Exception e) {
-            System.err.println("Hiba! Az SQlite fálj nem nyitható meg");
+            System.err.println("Hiba! Az SQLite fálj nem nyitható meg");
         }
         return con;
 
 
        
+    }
+    public void tryClosedb(Connection con) throws SQLException{
+        con.close();
+
+        try {
+            tryClosedb(con);
+        } catch (Exception e) {
+           System.err.println("Hiba! Az SQLite adatbázis bezárása sikertelen!");
+        }
     }
 
 
