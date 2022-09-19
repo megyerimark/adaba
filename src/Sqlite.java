@@ -34,7 +34,7 @@ public class Sqlite implements Database{
 
         try {
             tryClosedb(con);
-        } catch (Exception e) {
+        } catch (SQLException e) {
            System.err.println("Hiba! Az SQLite adatbázis bezárása sikertelen!");
         }
     }
